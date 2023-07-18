@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+.logo img {
+    height: 50px;
+
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    float: right;
+
+}
+
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: none;
+    background-color: #6f5ece;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.settings-icon i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #555;
+    cursor: pointer;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile span {
+    font-weight: bold;
+}
+
+/* dropdown header */
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Triangle */
+.dropdown:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    transform: rotate(180deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    z-index: 1;
+}
+
+/* footer section */
+.upper-section {
+    background-color: rgb(29, 43, 73);
+    padding: 20px;
+}
+
+/* traingle shape */
+.upper-section {
+    position: relative;
+    padding-bottom: 20px;
+    /* Adjust the padding as needed */
+}
+
+.upper-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    transform: translateX(-50%);
+    border-width: 0 20px 20px 20px;
+    transform: rotate(180deg);
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+
+}
+
+
+.upper-section .container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.upper-section h3 {
+    padding-bottom: 10px;
+    color: rgb(58, 135, 165);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.lower-section {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* links section social media */
+.social_links ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    gap: 15px;
+
+
+}
+
+.social_links li i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* side page */
+
+.form-container {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Set the initial position of the form container */
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: right 0.3s ease;
+}
+
+.form-container.open {
+    right: 0;
+    /* Move the form container to the visible position */
+}
+
+
+
+.form-container h2 {
+    margin-top: 0;
+    padding: 20px;
+}
+
+.form-container .form-group {
+    margin-bottom: 30px;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container .add-button {
+    display: block;
+    width: 50%;
+    padding: 8px;
+    position: relative;
+    left: 100px;
+    background-color: #261a6e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container .add-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* second section */
+.content {
+    background-image: url("images/NetlabsBlogCustomerData_BlogBanner-1920x960.jpg");
+    padding: 60px;
+
+}
+
+.container h1 {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* data table */
+.add-button {
+    background-color: #f3f4f3;
+    color: black;
+    border-radius: 10%;
+
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.containers {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.container list_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    /* padding: 10px; */
+}
+
+.list_content h4 {
+    margin-right: 10px;
+    padding-top: 20px;
+}
+
+.list_content button {
+    border-radius: 20px;
+}
+
+.add-button {
+    background-color: rgb(228, 225, 225);
+    color: black;
+    border: none;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+/* table content */
+.table-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+
+}
+
+/* #dataTable {
+    background-color: rgb(50, 50, 169);
+    color: white;
+    padding: 15px;
+
+} */
+
+
+
+/* jefbsjfb dtatable */
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: rgb(50, 50, 169);
+}
+
+.delete-button {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+
+
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
